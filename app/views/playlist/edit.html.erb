@@ -1,0 +1,6 @@
+<form action="/playlist/<%= @song.id %>" method="post">
+  <input type="hidden" name="_method" value="put">
+  <input type="text" placeholder="Title" value="<%= @song.title %>" name="title">
+  <input type="text" placeholder="URL" value="<%= @song.url %>" name="url">
+  <input type="submit" value="Update!">
+</form>

@@ -1,0 +1,7 @@
+<h1>PlaylistLand</h1>
+<hr>
+<a href="/new">Add new Jam</a>
+<hr>
+<% @songs.each do |song| %>
+  <a href="/playlist/<%= song.id %>"><%= song.title %></a> | <a href="<%= song.url %>"><%= song.url %></a><br>
+<% end %>
