@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get '/playlist/:id' => 'playlist#show'
   get '/playlist/:id/edit' => 'playlist#edit'
   put '/playlist/:id' => 'playlist#update'
+  delete 'playlist/:id' => 'playlist#destroy'
 end
